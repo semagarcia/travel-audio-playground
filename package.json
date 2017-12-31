@@ -1,0 +1,23 @@
+{
+  "name": "travel-audio-playground",
+  "version": "1.0.0",
+  "description": "Ionic PoC to test some features related with audio, travels and music",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/semagarcia/travel-audio-playground.git"
+  },
+  "author": "Sema García",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/semagarcia/travel-audio-playground/issues"
+  },
+  "homepage": "https://github.com/semagarcia/travel-audio-playground#readme",
+  "dependencies": {
+    "cordova": "^8.0.0",
+    "ionic": "^3.19.0"
+  }
+}
