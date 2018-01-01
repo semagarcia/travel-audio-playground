@@ -4,7 +4,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
-import { CreateHotspotPage } from '../pages/create-hotspot/create-hotspot';
 import { PlayerPage } from '../pages/player/player';
 import { PlayMusicPage } from '../pages/play-music/play-music';
 import { PlayVideoPage } from '../pages/play-video/play-video';
@@ -25,7 +24,6 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: HomePage },
-      { title: 'Create hotspot', component: CreateHotspotPage },
       { title: 'Player', component: PlayerPage },
       { title: 'Play music', component: PlayMusicPage },
       { title: 'Play video', component: PlayVideoPage }

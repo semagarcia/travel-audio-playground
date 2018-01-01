@@ -4,7 +4,6 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { CreateHotspotPage } from '../pages/create-hotspot/create-hotspot';
 import { PlayerPage } from '../pages/player/player';
 import { PlayMusicPage } from '../pages/play-music/play-music';
 import { PlayVideoPage } from '../pages/play-video/play-video';
@@ -17,7 +16,6 @@ import { Hotspot } from '@ionic-native/hotspot';
   declarations: [
     MyApp,
     HomePage,
-    CreateHotspotPage,
     PlayerPage,
     PlayMusicPage,
     PlayVideoPage
@@ -30,7 +28,6 @@ import { Hotspot } from '@ionic-native/hotspot';
   entryComponents: [
     MyApp,
     HomePage,
-    CreateHotspotPage,
     PlayerPage,
     PlayMusicPage,
     PlayVideoPage
