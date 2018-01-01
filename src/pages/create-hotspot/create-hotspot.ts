@@ -1,12 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the CreateHotspotPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { Hotspot, HotspotNetwork } from '@ionic-native/hotspot';
 
 @IonicPage()
 @Component({
@@ -15,11 +9,21 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class CreateHotspotPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private hotspot: Hotspot) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad CreateHotspotPage');
+  }
+
+  createHotSpot() {
+    console.log('Tapping...');
+    this.hotspot.scanWifi().then(w => console.log('Wifis: ', w));
+    this.hotspot.createHotspot('IonicAP', 'WPA_PSK', '1234567890')
+      .then(() => {
+        console.log('hotspot created');
+      })
+      .catch(e => console.log('Error creating hotspot'));
   }
 
 }

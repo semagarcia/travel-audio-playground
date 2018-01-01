@@ -11,6 +11,7 @@ import { PlayVideoPage } from '../pages/play-video/play-video';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { Hotspot } from '@ionic-native/hotspot';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
+    Hotspot,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

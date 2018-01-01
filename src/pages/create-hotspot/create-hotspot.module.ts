@@ -8,6 +8,6 @@ import { CreateHotspotPage } from './create-hotspot';
   ],
   imports: [
     IonicPageModule.forChild(CreateHotspotPage),
-  ],
+  ]
 })
 export class CreateHotspotPageModule {}
