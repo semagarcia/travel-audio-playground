@@ -9,5 +9,8 @@ import { PlayerPage } from './player';
   imports: [
     IonicPageModule.forChild(PlayerPage),
   ],
+  entryComponents: [
+    PlayerPage
+  ]
 })
 export class PlayerPageModule {}
