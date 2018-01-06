@@ -3,10 +3,14 @@ import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import { LoginPage } from '../pages/login/login';
 import { HomePage } from '../pages/home/home';
 import { PlayerPage } from '../pages/player/player';
 import { PlayMusicPage } from '../pages/play-music/play-music';
 import { PlayVideoPage } from '../pages/play-video/play-video';
+
+// Insert a barrel for providers
+import { SpotifyWebProvider } from './../providers/spotify-web-api/spotify-web';
 
 @Component({
   templateUrl: 'app.html'
@@ -14,15 +18,20 @@ import { PlayVideoPage } from '../pages/play-video/play-video';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
-
+  rootPage: any = LoginPage;
   pages: Array<{title: string, component: any}>;
 
-  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
+  constructor(
+    public platform: Platform,
+    public statusBar: StatusBar,
+    public splashScreen: SplashScreen,
+    // private spotifySrv: SpotifyWebProvider
+  ) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
+      //{ title: 'Login', component: LoginPage },
       { title: 'Home', component: HomePage },
       { title: 'Player', component: PlayerPage },
       { title: 'Play music', component: PlayMusicPage },
