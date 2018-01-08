@@ -13,7 +13,7 @@ import { PlayVideoPage } from '../pages/play-video/play-video';
 import { SpotifyWebProvider } from './../providers/spotify-web-api/spotify-web';
 
 @Component({
-  templateUrl: 'app.html'
+  templateUrl: 'app.component.html'
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
