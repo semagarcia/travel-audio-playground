@@ -15,6 +15,8 @@ import { PlayerPage } from '../pages/player/player';
 import { PlayMusicPage } from '../pages/play-music/play-music';
 import { PlayVideoPage } from '../pages/play-video/play-video';
 
+import { LoginPageModule } from '../pages/login/login.module';
+
 // Native
 import { InAppBrowser } from '@ionic-native/in-app-browser';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -26,7 +28,6 @@ import { SpotifyWebProvider } from '../providers/spotify-web-api/spotify-web';
 @NgModule({
   declarations: [
     MyApp,
-    LoginPage,
     HomePage,
     PlayerPage,
     PlayMusicPage,
@@ -35,12 +36,12 @@ import { SpotifyWebProvider } from '../providers/spotify-web-api/spotify-web';
   imports: [
     BrowserModule,
     HttpClientModule,
+    LoginPageModule,
     IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    LoginPage,
     HomePage,
     PlayerPage,
     PlayMusicPage,
