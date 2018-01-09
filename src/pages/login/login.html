@@ -7,6 +7,20 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  Login
+<ion-content padding class="page-login">
+  <ion-grid fixed>
+    <ion-row justify-content-center align-items-center class="img-title-sep">
+      <img width="70%" src="/assets/imgs/note.svg" />
+    </ion-row>
+
+    <ion-row justify-content-center align-items-center class="img-title-sep">
+      <div text-center class="app-title">Travel with your music!</div>
+    </ion-row>
+  </ion-grid>
 </ion-content>
+
+<ion-footer class="stick-footer">
+  <ion-toolbar>
+    <button ion-button full (click)="login()" style="color:#aaa">LOGIN</button>
+  </ion-toolbar>
+</ion-footer>
