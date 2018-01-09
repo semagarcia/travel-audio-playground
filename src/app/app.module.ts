@@ -2,8 +2,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+
+// Firebase
 import { AngularFireModule } from 'angularfire2';
-import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/database';
 
 // AppComponent
 import { MyApp } from './app.component';
@@ -25,6 +28,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 // Providers
 import { SpotifyWebProvider } from '../providers/spotify-web-api/spotify-web';
 
+// Configuration
+import { firebaseConfig } from './../config';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -38,6 +44,9 @@ import { SpotifyWebProvider } from '../providers/spotify-web-api/spotify-web';
     HttpClientModule,
     LoginPageModule,
     IonicModule.forRoot(MyApp),
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFirestoreModule,
+    AngularFireDatabaseModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
