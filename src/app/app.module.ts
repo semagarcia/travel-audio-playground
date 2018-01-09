@@ -12,14 +12,17 @@ import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/dat
 import { MyApp } from './app.component';
 
 // Pages
-import { LoginPage } from '../pages/login/login';
-import { HomePage } from '../pages/home/home';
-import { PlayerPage } from '../pages/player/player';
-import { PlayMusicPage } from '../pages/play-music/play-music';
-import { PlayVideoPage } from '../pages/play-video/play-video';
+import { LoginPage } from './../pages/login/login';
+import { HomePage } from './../pages/home/home';
+import { PlayerPage } from './../pages/player/player';
+import { PlayMusicPage } from './../pages/play-music/play-music';
+import { PlayVideoPage } from './../pages/play-video/play-video';
 
-import { ManageQueuePageModule } from '../pages/manage-queue/manage-queue.module';
-import { LoginPageModule } from '../pages/login/login.module';
+// Page modules
+import { LoginPageModule } from './../pages/login/login.module';
+import { ManageQueuePageModule } from './../pages/manage-queue/manage-queue.module';
+import { SearchByPlaylistPageModule } from './../pages/search-by-playlist/search-by-playlist.module';
+import { SearchBySongPageModule } from './../pages/search-by-song/search-by-song.module';
 
 // Native
 import { InAppBrowser } from '@ionic-native/in-app-browser';
@@ -27,7 +30,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 // Providers
-import { SpotifyWebProvider } from '../providers/spotify-web-api/spotify-web';
+import { SpotifyWebProvider } from './../providers/spotify-web-api/spotify-web';
 
 // Configuration
 import { firebaseConfig } from './../config';
@@ -45,6 +48,8 @@ import { firebaseConfig } from './../config';
     HttpClientModule,
     LoginPageModule,
     ManageQueuePageModule,
+    SearchByPlaylistPageModule,
+    SearchBySongPageModule,
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFirestoreModule,
