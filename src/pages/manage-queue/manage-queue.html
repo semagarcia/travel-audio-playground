@@ -7,8 +7,21 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content>
-  <ion-grid padding>
-
+<ion-content padding class="card-background-page">
+  <ion-grid fixed>
+    <ion-row>
+      <ion-card (click)="search('song')">
+        <img src="/assets/imgs/party_1.jpg"/>
+        <div class="card-title">Songs</div>
+        <div class="card-subtitle">Search single songs</div>
+      </ion-card>
+    </ion-row>
+    <ion-row>
+      <ion-card (click)="search('playlist')">
+        <img src="/assets/imgs/party_5.jpg"/>
+        <div class="card-title">Playlists</div>
+        <div class="card-subtitle">Search from your playlists</div>
+      </ion-card>
+    </ion-row>
   </ion-grid>
 </ion-content>
