@@ -2,8 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
-import { OauthBrowser } from 'ng2-cordova-oauth/platform/browser';
-import { OauthCordova } from 'ng2-cordova-oauth/platform/cordova';
 
 // AppComponent
 import { MyApp } from './app.component';
@@ -49,8 +47,6 @@ import { SpotifyWebProvider } from '../providers/spotify-web-api/spotify-web';
   ],
   providers: [
     InAppBrowser,
-    OauthBrowser,
-    OauthCordova,
     StatusBar,
     SplashScreen,
     SpotifyWebProvider,
