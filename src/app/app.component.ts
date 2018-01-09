@@ -5,6 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { LoginPage } from '../pages/login/login';
 import { HomePage } from '../pages/home/home';
+import { ManageQueuePage } from '../pages/manage-queue/manage-queue';
 import { PlayerPage } from '../pages/player/player';
 import { PlayMusicPage } from '../pages/play-music/play-music';
 import { PlayVideoPage } from '../pages/play-video/play-video';
@@ -33,6 +34,7 @@ export class MyApp {
     this.pages = [
       //{ title: 'Login', component: LoginPage },
       { title: 'Home', component: HomePage },
+      { title: 'Manage queue', component: ManageQueuePage },
       { title: 'Player', component: PlayerPage },
       { title: 'Play music', component: PlayMusicPage },
       { title: 'Play video', component: PlayVideoPage }

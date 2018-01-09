@@ -18,6 +18,7 @@ import { PlayerPage } from '../pages/player/player';
 import { PlayMusicPage } from '../pages/play-music/play-music';
 import { PlayVideoPage } from '../pages/play-video/play-video';
 
+import { ManageQueuePageModule } from '../pages/manage-queue/manage-queue.module';
 import { LoginPageModule } from '../pages/login/login.module';
 
 // Native
@@ -43,6 +44,7 @@ import { firebaseConfig } from './../config';
     BrowserModule,
     HttpClientModule,
     LoginPageModule,
+    ManageQueuePageModule,
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFirestoreModule,
