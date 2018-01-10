@@ -10,11 +10,23 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class SearchBySongPage {
 
+  searchCriteria: string;
+  itemType: string;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SearchBySongPage');
+  }
+
+  onInput(event) {
+    console.log('searchCriteria: ', this.searchCriteria);
+    console.log('itemType: ', this.itemType);
+  }
+
+  onCancel(event) {
+    console.log('onCancel event: ', event);
   }
 
 }
