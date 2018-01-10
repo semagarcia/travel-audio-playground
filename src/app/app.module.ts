@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -45,6 +46,7 @@ import { firebaseConfig } from './../config';
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     HttpClientModule,
     LoginPageModule,
     ManageQueuePageModule,
