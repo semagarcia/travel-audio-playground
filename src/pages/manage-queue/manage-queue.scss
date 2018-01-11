@@ -3,25 +3,33 @@ page-manage-queue {
 }
 
 .card-background-page {
-    ion-card {
-      position: relative;
-      text-align: center;
+  ion-card {
+    position: relative;
+    text-align: center;
+    img {
+      transition: all .2s ease-in-out;
     }
+    img:hover {
+      cursor: pointer;
+      opacity: .4;
+      transform: scale(1.1);
+    }
+  }
 
-    .card-title {
-      position: absolute;
-      top: 32%;
-      font-size: 3.0em;
-      width: 100%;
-      font-weight: bold;
-      color: #fff;
-    }
+  .card-title {
+    position: absolute;
+    top: 32%;
+    font-size: 3.0em;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+  }
 
-    .card-subtitle {
-      font-size: 2.0em;
-      position: absolute;
-      top: 51%;
-      width: 100%;
-      color: #fff;
-    }
+  .card-subtitle {
+    font-size: 2.0em;
+    position: absolute;
+    top: 51%;
+    width: 100%;
+    color: #fff;
+  }
 }
