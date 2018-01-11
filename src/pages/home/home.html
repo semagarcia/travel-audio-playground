@@ -1,70 +1,53 @@
 <ion-header>
-    <ion-navbar>
-      <button ion-button menuToggle>
-        <ion-icon name="menu"></ion-icon>
-      </button>
-      <ion-title>Home</ion-title>
-    </ion-navbar>
-  </ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
 
-  <ion-content padding class="card-background-page">
-    <ion-grid fixed>
-      <ion-row>
-        <ion-card>
-          <img src="/assets/imgs/party_1.jpg"/>
-          <div class="card-title">Songs</div>
-          <div class="card-subtitle">Search single songs</div>
-        </ion-card>
-      </ion-row>
-      <ion-row>
-        <ion-card>
-          <img src="/assets/imgs/party_5.jpg"/>
-          <div class="card-title">Playlists</div>
-          <div class="card-subtitle">Search from your playlists</div>
-        </ion-card>
-      </ion-row>
-    </ion-grid>
+<ion-content padding>
+  <!--<ion-card *ngFor="let i of images">
+    <img src="/assets/imgs/party_{{i}}.jpg"/>
+    <div class="card-title">Title</div>
+    <div class="card-subtitle">Subtitle</div>
+  </ion-card>-->
 
-    <!--<ion-card *ngFor="let i of images">
-      <img src="/assets/imgs/party_{{i}}.jpg"/>
-      <div class="card-title">Title</div>
-      <div class="card-subtitle">Subtitle</div>
-    </ion-card>-->
+  <!--<ion-grid fixed>
+    <ion-row>
+      <ion-col col-4>
+        <button ion-button (click)="login()">A</button>
+      </ion-col>
+      <ion-col col-4>
+        <button ion-button (click)="login2()">B</button>
+      </ion-col>
+      <ion-col col-4>
+        <button ion-button (click)="reset()">C</button>
+      </ion-col>
+    </ion-row>
 
-    <!--<ion-grid fixed>
-      <ion-row>
-        <ion-col col-4>
-          <button ion-button (click)="login()">A</button>
-        </ion-col>
-        <ion-col col-4>
-          <button ion-button (click)="login2()">B</button>
-        </ion-col>
-        <ion-col col-4>
-          <button ion-button (click)="reset()">C</button>
-        </ion-col>
-      </ion-row>
+    <ion-row>
+      <ion-col>
+        My current travel
+      </ion-col>
+    </ion-row>
 
-      <ion-row>
-        <ion-col>
-          My current travel
-        </ion-col>
-      </ion-row>
-
-      <ion-row>
-        <ion-col>
-          <ion-list>
-              <ion-item-sliding *ngFor='let item of items | async'>
-                <ion-item>
-                  <ion-label>{{ item }}</ion-label>
-                </ion-item>
-                  <ion-item-options>
-                  <button ion-button danger>
-                    Delete
-                  </button>
-                  </ion-item-options>
-              </ion-item-sliding>
-            </ion-list>
-        </ion-col>
-      </ion-row>
-    </ion-grid>-->
-  </ion-content>
+    <ion-row>
+      <ion-col>
+        <ion-list>
+            <ion-item-sliding *ngFor='let item of items | async'>
+              <ion-item>
+                <ion-label>{{ item }}</ion-label>
+              </ion-item>
+                <ion-item-options>
+                <button ion-button danger>
+                  Delete
+                </button>
+                </ion-item-options>
+            </ion-item-sliding>
+          </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>-->
+</ion-content>
