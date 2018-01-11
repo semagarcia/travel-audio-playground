@@ -29,4 +29,13 @@ export class SearchBySongPage {
     console.log('onCancel event: ', event);
   }
 
+  addSongs() {
+    console.log('Adding songs...');
+    this.navCtrl.pop();
+  }
+
+  goBack() {
+    this.navCtrl.pop();
+  }
+
 }
