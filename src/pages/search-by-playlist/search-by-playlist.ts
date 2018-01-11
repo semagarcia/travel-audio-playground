@@ -17,4 +17,13 @@ export class SearchByPlaylistPage {
     console.log('ionViewDidLoad SearchByPlaylistPage');
   }
 
+  addSongs() {
+    console.log('Adding songs...');
+    this.navCtrl.pop();
+  }
+
+  goBack() {
+    this.navCtrl.pop();
+  }
+
 }
