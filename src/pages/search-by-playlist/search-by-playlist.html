@@ -22,6 +22,34 @@
         </ion-item>
       </ion-col>
     </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-list>
+          <button detail-none (click)="expandItem(item)" ion-item *ngFor="let item of items" style="align-items:baseline">
+            <ion-thumbnail item-start>
+              <img src="http://placehold.it/100">
+            </ion-thumbnail>
+            <h2>My Neighbor Totoro</h2>
+            <p>Hayao Miyazaki • 1988</p>
+            <expandable-playlist [expandHeight]="itemExpandHeight" [expanded]="item.expanded">
+              <ion-grid>
+                <ion-row>
+                  <ion-col>AAAA</ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>BBBB</ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>CCCC</ion-col>
+                </ion-row>
+              </ion-grid>
+            </expandable-playlist>
+            <button ion-button clear item-end>View</button>
+          </button>
+        </ion-list>
+      </ion-col>
+    </ion-row>
   </ion-grid>
 </ion-content>
 

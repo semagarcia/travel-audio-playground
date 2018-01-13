@@ -10,11 +10,44 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class SearchByPlaylistPage {
 
+  items: any = [];
+  itemExpandHeight: number = 100;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.items = [
+      { expanded: false },
+      { expanded: false },
+      { expanded: false },
+      { expanded: false },
+      { expanded: false },
+      { expanded: false },
+      { expanded: false },
+      { expanded: false },
+      { expanded: false },
+      { expanded: false },
+      { expanded: false },
+      { expanded: false },
+      { expanded: false },
+      { expanded: false },
+      { expanded: false },
+      { expanded: false },
+      { expanded: false }
+    ];
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SearchByPlaylistPage');
+  }
+
+  expandItem(item){
+    this.items.map((listItem) => {
+      if(item == listItem){
+          listItem.expanded = !listItem.expanded;
+      } else {
+          listItem.expanded = false;
+      }
+      return listItem;
+    });
   }
 
   addSongs() {
