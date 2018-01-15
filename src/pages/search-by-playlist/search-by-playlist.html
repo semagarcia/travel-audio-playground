@@ -25,8 +25,8 @@
 
     <ion-row>
       <ion-col>
-        <ion-list>
-          <button detail-none (click)="expandItem(item)" ion-item *ngFor="let item of items" style="align-items:baseline">
+        <!--<ion-list>
+          <button detail-none ion-item *ngFor="let item of items" style="align-items:baseline">
             <ion-thumbnail item-start>
               <img src="http://placehold.it/100">
             </ion-thumbnail>
@@ -45,9 +45,52 @@
                 </ion-row>
               </ion-grid>
             </expandable-playlist>
-            <button ion-button clear item-end>View</button>
+            <button ion-button clear item-end (click)="expandItem(item)">View</button>
           </button>
-        </ion-list>
+        </ion-list>-->
+      </ion-col>
+    </ion-row>
+
+    <ion-row padding-top>
+      <ion-col>
+        <ion-item-group>
+          <ion-item-divider color="dark">Fulanito</ion-item-divider>
+          <ion-item>
+            <div item-content>
+              <h2>AAA Title</h2>
+              <p>AAA Desc</p>
+            </div>
+            <ion-checkbox item-end [(ngModel)]="xx"></ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <div item-content>
+              <h2>BBB Title</h2>
+              <p>BBB Desc</p>
+            </div>
+            <ion-checkbox item-end [(ngModel)]="xx"></ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <div item-content>
+              <h2>CCC Title</h2>
+              <p>CCC Desc</p>
+            </div>
+            <ion-checkbox item-end [(ngModel)]="xx"></ion-checkbox>
+          </ion-item>
+        </ion-item-group>
+      </ion-col>
+    </ion-row>
+
+    <ion-row padding-top>
+      <ion-col>
+        <ion-item-group>
+          <ion-item-divider color="light">Menganito</ion-item-divider>
+          <ion-item>
+            <div item-content><h2><em>DDD</em></h2></div>
+            <ion-checkbox item-end [(ngModel)]="xx"></ion-checkbox>
+          </ion-item>
+          <ion-item>EEE</ion-item>
+          <ion-item>FFF</ion-item>
+        </ion-item-group>
       </ion-col>
     </ion-row>
   </ion-grid>
